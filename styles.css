@@ -2,7 +2,7 @@ body{margin:0}
 body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Helvetica Neue",Arial,sans-serif;color:#0e1116;background:#f3f4f6;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}
 html{scroll-behavior:smooth}
-.serif{font-family:ui-rounded,"SF Pro Rounded",Nunito,"Helvetica Neue",Arial,sans-serif;font-weight:800;font-style:normal;color:#6e6e73}
+.serif{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;font-style:italic;letter-spacing:-0.02em;color:#6e6e73}
 .aurora{background:linear-gradient(100deg,#2f6bff,#8a4dff 55%,#ff6a3d);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .wrap{max-width:1280px;margin:0 auto;padding:0 max(20px,4vw)}
 .eyebrow{margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#5b6370}
