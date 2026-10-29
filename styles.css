@@ -102,3 +102,5 @@ button.card{border:0;text-align:left;width:100%;appearance:none}
 .toast::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(115deg,rgba(255,255,255,.75) 0%,rgba(255,255,255,0) 38%);opacity:.3;pointer-events:none}
 .toast>*{position:relative}
 .toast strong,.toast span.tx{text-shadow:0 1px 0 rgba(255,255,255,.5)}
+.x{z-index:5}
+.rhead .x{top:50%;right:18px;margin-top:-22px}
