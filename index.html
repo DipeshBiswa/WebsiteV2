@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dipesh Biswa — Software Engineering Portfolio</title>
+<meta name="description" content="Dipesh Biswa is a Software Engineering student at Rochester Institute of Technology. Java backends, React interfaces and API integration.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div style="width:100%;max-width:1440px;margin:0 auto;box-sizing:border-box">
+<div class="bar"></div>
+
+<div style="position:sticky;top:14px;z-index:10;display:flex;justify-content:center;padding:14px 16px 0">
+<nav class="glass" style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;padding:4px 8px 4px 22px;border-radius:980px;-webkit-backdrop-filter:saturate(180%) blur(22px);backdrop-filter:saturate(180%) blur(22px);box-shadow:0 8px 30px rgba(14,17,22,.08)">
+<strong style="font-size:16px;letter-spacing:-0.02em;margin-right:12px">Dipesh Biswa</strong>
+<span class="navlinks"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#resume">Résumé</a><a href="#contact">Contact</a></span>
+</nav>
+</div>
+
+<header class="hero">
+<div class="wrap">
+<div class="in" style="display:flex;flex-direction:column;align-items:flex-start;gap:28px">
+<p class="glass now" style="margin:0;display:inline-flex;align-items:center;gap:12px;padding:12px 20px;border-radius:980px;font-size:15px;font-weight:500;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)"><span class="dot"></span>Software Engineering student · Class of May 2029</p>
+<h1 style="margin:0;font-size:clamp(54px,10.5vw,160px);line-height:.94;letter-spacing:-0.055em;font-weight:700;max-width:1100px">I have a passion for <span class="serif aurora" style="font-size:1.08em;padding-right:.08em">building.</span></h1>
+<p style="margin:0;font-size:clamp(19px,2vw,26px);line-height:1.35;color:#3d4450;max-width:640px">I’m interested in how the pieces of an application fit together. My work focuses on Java backends, React interfaces, and the APIs between them.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><a class="btn ink" href="#work">See the work</a><button class="btn glass" data-open-resume>View résumé</button></div>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px;margin-top:96px">
+<div class="rv" style="border-top:1px solid rgba(14,17,22,.2);padding-top:18px"><div style="font-size:clamp(44px,5vw,72px);font-weight:700;letter-spacing:-0.045em">May 2029</div><p style="margin:2px 0 0;font-size:17px;color:#5b6370">expected graduation</p></div>
+<div class="rv" style="border-top:1px solid rgba(14,17,22,.2);padding-top:18px"><div style="font-size:clamp(44px,5vw,72px);font-weight:700;letter-spacing:-0.045em">RIT</div><p style="margin:2px 0 0;font-size:17px;color:#5b6370">Software Engineering</p></div>
+<div class="rv" style="border-top:1px solid rgba(14,17,22,.2);padding-top:18px"><div style="font-size:clamp(44px,5vw,72px);font-weight:700;letter-spacing:-0.045em">Java + React</div><p style="margin:2px 0 0;font-size:17px;color:#5b6370">core stack</p></div>
+</div>
+</div>
+</header>
+
+<section id="work" style="padding:110px 0 60px">
+<div class="wrap">
+<p class="eyebrow rv">Selected work</p>
+<h2 class="h2 rv">Things I’ve <span class="serif">built.</span></h2>
+<div class="bento">
+<button class="card c1 rv" data-id="echo" aria-label="Open details for Echo"><span class="tag">Hackathon · AI · Offline-first</span><span class="h">Echo</span><span class="d">An offline tourism feedback app that helps small operators understand what visitors want, with offline translation into Kiswahili and AI recommendations flagged for human review.</span><span class="meta">October 2026 · 7th Hack-Nation Global AI Hackathon, NY Hub (Columbia)</span><span class="shot img"><img src="assets/projects/echo.png" alt="Echo app on two phone screens: the welcome screen and the language picker for visitor feedback" style="object-position:center 30%" loading="lazy"></span><span class="more">View details <span aria-hidden="true">→</span></span></button>
+<button class="card c2 rv" data-id="plant" aria-label="Open details for IoT Houseplant Health Monitor"><span class="tag">Backend · IoT</span><span class="h">IoT Houseplant Health Monitor</span><span class="d">Spring Boot backend that turns ESP32 soil moisture, sunlight, temperature and humidity readings into Claude-generated care recommendations.</span><span class="meta">August – September 2026</span><span class="shot img"><img src="assets/projects/leaflink.png" alt="LeafLink dashboard for a spider plant with plant data, reading history and an AI plant assistant" style="object-position:top center" loading="lazy"></span><span class="more">View details <span aria-hidden="true">→</span></span></button>
+<button class="card c3 rv" data-id="auth" aria-label="Open details for Secure Auth Service"><span class="tag">Backend · Authentication</span><span class="h">Secure Auth Service</span><span class="d">Reusable authentication service with a React sign-in screen, a custom Spring Security filter chain, JWT validation and role-based access control.</span><span class="meta">December 2025 – January 2026</span><span class="shot img"><img src="assets/projects/auth.png" alt="FinanceApp sign-in screen with username and password fields, a Sign In button and a Register link" style="object-position:center 42%" loading="lazy"></span><span class="more">View details <span aria-hidden="true">→</span></span></button>
+<button class="card c4 rv" data-id="finance" aria-label="Open details for Personal Finance Tracker"><span class="tag">Full-stack · API integration</span><span class="h">Personal Finance Tracker</span><span class="d">React and Spring Boot app that syncs bank transactions through Plaid and categorizes spending, with JWT-protected endpoints.</span><span class="meta">December 2025 – January 2026</span><span class="shot img"><img src="assets/projects/finance.png" alt="FinanceApp transactions dashboard with spending summary, category filters and transaction history" style="object-position:top center" loading="lazy"></span><span class="more">View details <span aria-hidden="true">→</span></span></button>
+</div>
+</div>
+</section>
+
+<section id="experience" style="padding:100px 0">
+<div class="wrap">
+<p class="eyebrow rv">Experience</p>
+<h2 class="h2 rv">Where I’ve <span class="serif">learned.</span></h2>
+<div class="rv"><div class="row"><span class="n">01</span><h3>B.S. Software Engineering, RIT</h3><span class="when">Anticipated May 2029</span><p>Golisano College of Computing and Information. Recipient of the RIT Presidential and Davitt Endowed Scholarship. Coursework: Engineering of Software Subsystem, Engineering of Enterprise SW System, Human Centered Requirements and Design, Software Process and Project Management.</p></div>
+<div class="row" style="border-bottom:1px solid rgba(14,17,22,.14)"><span class="n">02</span><h3>AOI Operator, YOH (Contractor at L3Harris)</h3><span class="when">Apr – Aug 2025</span><p>Operated and optimized AOI systems to detect defects in PCB assemblies, resolved inspection discrepancies with engineers and technicians, and documented results in company databases.</p></div>
+</div></div>
+</section>
+
+<section id="skills" style="padding:40px 0 110px">
+<div class="wrap">
+<p class="eyebrow rv">Toolkit</p>
+<h2 class="h2 rv">The tools I <span class="serif">reach for.</span></h2>
+</div>
+<div class="mq" aria-label="Skills and tools">
+<div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fff"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="15.5" fill="none" stroke="#e3e5e8" stroke-width="1.5"/><path d="M30 6c4 5-5 8-1 14 2 3 4 5 1 9 5-4 6-8 3-12-2-4 0-7-3-11z" fill="#f58219"/><path d="M38 14c3 3-3 5-1 9 1 2 3 3 1 6 4-3 4-6 2-9-1-3 0-4-2-6z" fill="#f58219"/><path d="M15 36h26v6c0 6-5 10-11 10h-4c-6 0-11-4-11-10z" fill="#5382a1"/><path d="M41 38h3a4.5 4.5 0 0 1 0 9h-4" fill="none" stroke="#5382a1" stroke-width="3.2"/><path d="M11 56c8 3 28 3 40-1" fill="none" stroke="#5382a1" stroke-width="3" stroke-linecap="round"/></svg><span>Java</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fff"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="15.5" fill="none" stroke="#e3e5e8" stroke-width="1.5"/><path d="M31 9c-9 0-8.5 4.2-8.5 4.2v4.4H32v1.4H19.2S13 18.2 13 28.4s5.4 9.8 5.4 9.8h3.2v-4.7s-.3-5.4 5.3-5.4h9.3s5.2.1 5.2-5.1V14.4S42 9 31 9z" fill="#3776ab"/><circle cx="26.5" cy="14.5" r="1.9" fill="#fff"/><path d="M31 9c-9 0-8.5 4.2-8.5 4.2v4.4H32v1.4H19.2S13 18.2 13 28.4s5.4 9.8 5.4 9.8h3.2v-4.7s-.3-5.4 5.3-5.4h9.3s5.2.1 5.2-5.1V14.4S42 9 31 9z" fill="#ffd43b" transform="rotate(180 32 32.5)"/><circle cx="37.5" cy="50.5" r="1.9" fill="#fff" /></svg><span>Python</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#f7df1e"/><text x="32" y="40" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="26" fill="#1d1d1f">JS</text></svg><span>JavaScript</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e34f26"/><path d="M25 22L14 32l11 10M39 22l11 10-11 10M35 17l-6 30" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>HTML / CSS</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#4b5563"/><g fill="none" stroke="#fff" stroke-width="3.5"><ellipse cx="32" cy="17" rx="16" ry="6"/><path d="M16 17v30c0 3.3 7.2 6 16 6s16-2.7 16-6V17"/><path d="M16 32c0 3.3 7.2 6 16 6s16-2.7 16-6"/></g></svg><span>SQL</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#6db33f"/><path d="M46 16C27 16 17 26 17 40c0 3 1 6 3 8 1-9 8-16 18-20-8 6-13 12-15 21 13 2 25-6 23-33z" fill="#fff"/></svg><span>Spring Boot</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#149eca"/><g fill="none" stroke="#fff" stroke-width="3"><ellipse cx="32" cy="32" rx="22" ry="8.5"/><ellipse cx="32" cy="32" rx="22" ry="8.5" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="22" ry="8.5" transform="rotate(120 32 32)"/></g><circle cx="32" cy="32" r="4" fill="#fff"/></svg><span>React</span></div><div class="sk"><img src="assets/logos/junit.png" alt="" width="64" height="64"><span>JUnit</span></div><div class="sk"><img src="assets/logos/jest.png" alt="" width="64" height="64"><span>Jest</span></div><div class="sk"><img src="assets/logos/postgres.png" alt="" width="64" height="64"><span>PostgreSQL</span></div><div class="sk"><img src="assets/logos/mysql.png" alt="" width="64" height="64"><span>MySQL</span></div><div class="sk"><img src="assets/logos/mongodb.png" alt="" width="64" height="64"><span>MongoDB</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#f05032"/><g fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><circle cx="22" cy="17" r="5"/><circle cx="22" cy="47" r="5"/><circle cx="44" cy="26" r="5"/><path d="M22 22v20M44 31c0 9-10 9-22 12"/></g></svg><span>Git</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#6d5bd0"/><path d="M14 24h32m-9-9l9 9-9 9M50 41H18m9-9l-9 9 9 9" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>REST APIs</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fc6d26"/><g fill="#fff"><circle cx="14" cy="32" r="6"/><circle cx="32" cy="32" r="6"/><circle cx="50" cy="32" r="6"/></g><path d="M20 32h6M38 32h6" stroke="#fff" stroke-width="4"/></svg><span>GitLab CI/CD</span></div><div class="sk"><img src="assets/logos/maven.png" alt="" width="64" height="64"><span>Maven</span></div><div class="sk"><img src="assets/logos/railway.png" alt="" width="64" height="64"><span>Railway</span></div><div class="sk"><img src="assets/logos/vercel.png" alt="" width="64" height="64"><span>Vercel</span></div></div>
+<div aria-hidden="true"><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fff"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="15.5" fill="none" stroke="#e3e5e8" stroke-width="1.5"/><path d="M30 6c4 5-5 8-1 14 2 3 4 5 1 9 5-4 6-8 3-12-2-4 0-7-3-11z" fill="#f58219"/><path d="M38 14c3 3-3 5-1 9 1 2 3 3 1 6 4-3 4-6 2-9-1-3 0-4-2-6z" fill="#f58219"/><path d="M15 36h26v6c0 6-5 10-11 10h-4c-6 0-11-4-11-10z" fill="#5382a1"/><path d="M41 38h3a4.5 4.5 0 0 1 0 9h-4" fill="none" stroke="#5382a1" stroke-width="3.2"/><path d="M11 56c8 3 28 3 40-1" fill="none" stroke="#5382a1" stroke-width="3" stroke-linecap="round"/></svg><span>Java</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fff"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="15.5" fill="none" stroke="#e3e5e8" stroke-width="1.5"/><path d="M31 9c-9 0-8.5 4.2-8.5 4.2v4.4H32v1.4H19.2S13 18.2 13 28.4s5.4 9.8 5.4 9.8h3.2v-4.7s-.3-5.4 5.3-5.4h9.3s5.2.1 5.2-5.1V14.4S42 9 31 9z" fill="#3776ab"/><circle cx="26.5" cy="14.5" r="1.9" fill="#fff"/><path d="M31 9c-9 0-8.5 4.2-8.5 4.2v4.4H32v1.4H19.2S13 18.2 13 28.4s5.4 9.8 5.4 9.8h3.2v-4.7s-.3-5.4 5.3-5.4h9.3s5.2.1 5.2-5.1V14.4S42 9 31 9z" fill="#ffd43b" transform="rotate(180 32 32.5)"/><circle cx="37.5" cy="50.5" r="1.9" fill="#fff" /></svg><span>Python</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#f7df1e"/><text x="32" y="40" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="26" fill="#1d1d1f">JS</text></svg><span>JavaScript</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#e34f26"/><path d="M25 22L14 32l11 10M39 22l11 10-11 10M35 17l-6 30" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>HTML / CSS</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#4b5563"/><g fill="none" stroke="#fff" stroke-width="3.5"><ellipse cx="32" cy="17" rx="16" ry="6"/><path d="M16 17v30c0 3.3 7.2 6 16 6s16-2.7 16-6V17"/><path d="M16 32c0 3.3 7.2 6 16 6s16-2.7 16-6"/></g></svg><span>SQL</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#6db33f"/><path d="M46 16C27 16 17 26 17 40c0 3 1 6 3 8 1-9 8-16 18-20-8 6-13 12-15 21 13 2 25-6 23-33z" fill="#fff"/></svg><span>Spring Boot</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#149eca"/><g fill="none" stroke="#fff" stroke-width="3"><ellipse cx="32" cy="32" rx="22" ry="8.5"/><ellipse cx="32" cy="32" rx="22" ry="8.5" transform="rotate(60 32 32)"/><ellipse cx="32" cy="32" rx="22" ry="8.5" transform="rotate(120 32 32)"/></g><circle cx="32" cy="32" r="4" fill="#fff"/></svg><span>React</span></div><div class="sk"><img src="assets/logos/junit.png" alt="" width="64" height="64"><span>JUnit</span></div><div class="sk"><img src="assets/logos/jest.png" alt="" width="64" height="64"><span>Jest</span></div><div class="sk"><img src="assets/logos/postgres.png" alt="" width="64" height="64"><span>PostgreSQL</span></div><div class="sk"><img src="assets/logos/mysql.png" alt="" width="64" height="64"><span>MySQL</span></div><div class="sk"><img src="assets/logos/mongodb.png" alt="" width="64" height="64"><span>MongoDB</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#f05032"/><g fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"><circle cx="22" cy="17" r="5"/><circle cx="22" cy="47" r="5"/><circle cx="44" cy="26" r="5"/><path d="M22 22v20M44 31c0 9-10 9-22 12"/></g></svg><span>Git</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#6d5bd0"/><path d="M14 24h32m-9-9l9 9-9 9M50 41H18m9-9l-9 9 9 9" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>REST APIs</span></div><div class="sk"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#fc6d26"/><g fill="#fff"><circle cx="14" cy="32" r="6"/><circle cx="32" cy="32" r="6"/><circle cx="50" cy="32" r="6"/></g><path d="M20 32h6M38 32h6" stroke="#fff" stroke-width="4"/></svg><span>GitLab CI/CD</span></div><div class="sk"><img src="assets/logos/maven.png" alt="" width="64" height="64"><span>Maven</span></div><div class="sk"><img src="assets/logos/railway.png" alt="" width="64" height="64"><span>Railway</span></div><div class="sk"><img src="assets/logos/vercel.png" alt="" width="64" height="64"><span>Vercel</span></div></div>
+</div>
+</section>
+
+<section id="resume" style="padding:0 0 110px">
+<div class="wrap">
+<div class="rv glass" style="border-radius:44px;padding:clamp(36px,6vw,80px);display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px)">
+<div style="max-width:620px;display:flex;flex-direction:column;gap:16px">
+<p class="eyebrow" style="margin:0">Résumé</p>
+<h2 style="margin:0;font-size:clamp(36px,5vw,68px);line-height:1;letter-spacing:-0.04em;font-weight:700">One page. <span class="serif">Everything</span> in it.</h2>
+<p style="margin:0;font-size:20px;line-height:1.45;color:#3d4450">Education, projects, experience and skills at a glance.</p>
+</div>
+<div style="display:flex;gap:14px;flex-wrap:wrap"><button class="btn ink" data-open-resume>View résumé</button><a class="btn glass" href="assets/resume.pdf" download="Biswa_Dipesh_Resume_2027.pdf">Download PDF</a></div>
+
+</div>
+</div>
+</section>
+
+<section id="contact" style="padding:0 0 60px">
+<div class="wrap">
+<div class="rv" style="position:relative;isolation:isolate;overflow:hidden;border-radius:44px;padding:clamp(48px,9vw,120px) clamp(24px,6vw,80px);background:linear-gradient(135deg,#dbe6ff,#efe4ff 50%,#ffe3d3);text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px">
+<h2 style="margin:0;font-size:clamp(44px,7.5vw,110px);line-height:.98;letter-spacing:-0.05em;font-weight:700">Let’s <span class="serif">Connect</span></h2>
+<p style="margin:0;font-size:21px;color:#3d4450">Software Engineering student at RIT, graduating May 2029.</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:10px"><a class="btn ink" href="mailto:DB4048@g.rit.edu">DB4048@g.rit.edu</a><a class="btn glass" href="https://www.linkedin.com/in/dipesh-biswa/" target="_blank" rel="noopener">LinkedIn</a><a class="btn glass" href="https://github.com/DipeshBiswa" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+<p style="margin:36px 0 0;font-size:14px;color:#5b6370;text-align:center">© 2026 Dipesh Biswa</p>
+</div>
+</section>
+
+</div>
+
+<div class="ov" id="pm" role="dialog" aria-modal="true" aria-label="Project details" hidden>
+<button class="ovbg" data-close aria-label="Close project details"></button>
+<div class="panel" id="pm-panel"></div>
+</div>
+<div class="ov" id="rm" role="dialog" aria-modal="true" aria-label="Résumé" hidden>
+<button class="ovbg" data-close aria-label="Close résumé"></button>
+<div class="panel" style="max-width:900px;background:#f3f4f6">
+<button class="x" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="#0e1116" stroke-width="2" stroke-linecap="round"/></svg></button>
+<div class="rhead"><strong style="font-size:20px;letter-spacing:-0.02em">Résumé · Dipesh Biswa</strong><a class="btn ink" style="min-height:44px" href="assets/resume.pdf" download="Biswa_Dipesh_Resume_2027.pdf">Download PDF</a></div>
+<div style="padding:clamp(12px,3vw,32px)"><img src="assets/resume-preview.jpg" alt="Résumé of Dipesh Biswa: education, project experience, work experience and technical skills" style="display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 12px 40px rgba(14,17,22,.12);background:#fff"></div>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
