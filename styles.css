@@ -117,3 +117,21 @@ button.card{border:0;text-align:left;width:100%;appearance:none}
 .toast strong,.toast span.tx{text-shadow:0 1px 0 rgba(255,255,255,.5)}
 .x{z-index:5}
 .rhead .x{top:50%;right:18px;margin-top:-22px}
+
+/* Intro: the notification travels left, the heart drops onto "passion", "building." fades in */
+.bld{display:inline-block;animation:bldIn 1.8s cubic-bezier(.22,.8,.3,1) 3.4s both}
+@keyframes bldIn{from{opacity:0;filter:blur(14px);transform:translateY(10px)}to{opacity:1;filter:blur(0);transform:none}}
+.pw{position:relative}
+.fh{display:none}
+@keyframes toastTravel{0%{opacity:0;transform:translate(0,-28px) scale(.94);visibility:visible}7%{opacity:1;transform:translate(0,0) scale(1);animation-timing-function:linear}16%{opacity:1;transform:translate(0,0) scale(1);animation-timing-function:cubic-bezier(.65,0,.25,1)}36%{opacity:1;transform:translate(var(--tx),var(--ty)) scale(1)}80%{opacity:1;transform:translate(var(--tx),var(--ty)) scale(1);visibility:visible}100%{opacity:0;transform:translate(var(--tx),calc(var(--ty) - 18px)) scale(.97);visibility:hidden}}
+@keyframes tiHeart{0%,36.5%{opacity:1}37%,100%{opacity:0}}
+@keyframes heartDrop{0%{opacity:0;transform:translateY(calc(var(--fall)*-1)) scale(.7);animation-timing-function:cubic-bezier(.5,0,1,.6)}3%{opacity:1}24%{opacity:1;transform:translateY(0) scale(1.12,.88);animation-timing-function:cubic-bezier(.2,.7,.4,1)}39%{transform:translateY(-64px) scale(1);animation-timing-function:cubic-bezier(.5,0,1,.6)}52%{transform:translateY(0) scale(1.1,.9);animation-timing-function:cubic-bezier(.2,.7,.4,1)}65%{transform:translateY(-24px) scale(1);animation-timing-function:cubic-bezier(.5,0,1,.6)}74%{transform:translateY(0) scale(1.06,.94);animation-timing-function:cubic-bezier(.2,.7,.4,1)}83%{transform:translateY(-8px) scale(1);animation-timing-function:cubic-bezier(.5,0,1,.6)}91%{opacity:1;transform:translateY(0) scale(1.03,.97);animation-timing-function:ease}100%{opacity:0;transform:translateY(0) scale(.6)}}
+@media (min-width:821px){
+.bld{animation-delay:5.6s}
+.toast{--ty:84px;--wc:calc(max(4vw,(100vw - 1280px)/2) + 5.16 * clamp(54px,10.5vw,160px));--tx:calc(var(--wc) - 100vw + 340px);animation:toastTravel 5.6s linear 3s both}
+.toast .ti svg{animation:tiHeart 5.6s linear 3s both}
+.fh{display:block;position:absolute;left:50%;top:.423em;width:40px;height:40px;margin:-40px 0 0 -20px;z-index:5;pointer-events:none;opacity:0;--fall:calc((127px + .317em));transform-origin:50% 100%;animation:heartDrop 2.3s linear 5.05s both}
+.fh svg{display:block;width:100%;height:100%}
+}
+@supports (overflow:clip){@media (min-width:821px){.hero{overflow-x:clip;overflow-y:visible}}}
+@media (prefers-reduced-motion:reduce){.toast{animation:toastFade 5s linear 3s both!important}}
