@@ -225,3 +225,13 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 @media (min-width:821px){.about{display:flex;flex-direction:column;min-height:calc(100vh - 96px)!important;box-sizing:border-box}.ab-hero{flex:none}}
 .ab-cta{margin-top:auto!important;justify-content:center;padding:22px 0 28px}
 @media (min-width:821px){.ab-hero{width:100%}}
+/* Cartoon avatar */
+.ab-pw{position:relative;display:flex}
+.ab-pw .ab-photo{flex:1;min-width:0}
+.ab-av{position:absolute;right:8px;top:2px;width:112px;height:auto;z-index:3;pointer-events:none;transform-origin:50% 100%;animation:avPop .7s cubic-bezier(.2,1.5,.4,1) .35s both}
+@keyframes avPop{from{transform:translateY(24px) scale(.2) rotate(-16deg);opacity:0}to{transform:none;opacity:1}}
+.ab-list li{position:relative}
+.ab-rv{position:absolute;right:30px;top:-40px;width:72px;height:auto;opacity:0;transform:translateY(18px) scale(.5);transform-origin:50% 100%;transition:opacity .15s,transform .45s cubic-bezier(.2,1.6,.4,1);pointer-events:none;z-index:4}
+.ab-list li:hover .ab-rv{opacity:1;transform:none}
+@media (max-width:820px){.ab-pw{max-width:420px}.ab-pw .ab-photo{max-width:none}.ab-av{width:92px}}
+@media (prefers-reduced-motion:reduce){.ab-av{animation:none}.ab-rv{transition:opacity .15s}}
