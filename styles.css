@@ -154,7 +154,7 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 
 /* About page */
 .about{padding-top:48px}
-.ab-hero{display:grid;grid-template-columns:minmax(260px,5fr) 7fr;gap:clamp(28px,6vw,80px);align-items:center;padding-top:32px}
+.ab-hero{display:grid;grid-template-columns:minmax(240px,5fr) 7fr;gap:clamp(28px,5vw,72px);align-items:start;padding-top:32px}
 .ab-photo{margin:0;border-radius:44px;overflow:hidden;aspect-ratio:3/4;background:var(--panel2);border:1px solid var(--line);box-shadow:0 30px 80px rgba(14,17,22,.18)}
 .ab-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .ab-copy h1{margin:0 0 18px;font-size:clamp(48px,8vw,104px);line-height:.98;letter-spacing:-0.05em;font-weight:700}
@@ -170,3 +170,6 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 .ab-ph{flex:none;width:128px;aspect-ratio:4/3;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 20px rgba(14,17,22,.12)}
 .ab-ph img{display:block;width:100%;height:100%;object-fit:cover}
 @media (max-width:520px){.ab-ph{width:96px}}
+@media (min-width:821px){.ab-photo{position:sticky;top:110px}}
+.ab-list li{min-width:0}.ab-list li>div{min-width:0}
+@media (max-width:1000px) and (min-width:821px){.ab-ph{width:104px}}
