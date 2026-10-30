@@ -221,3 +221,7 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 }
 @media (min-width:821px) and (max-height:760px){.ab-copy .lead{display:none}}
 @media (min-width:821px){.ab-photo{top:auto!important}}
+/* About: buttons pinned to the bottom, centered */
+@media (min-width:821px){.about{display:flex;flex-direction:column;min-height:calc(100vh - 96px)!important;box-sizing:border-box}.ab-hero{flex:none}}
+.ab-cta{margin-top:auto!important;justify-content:center;padding:22px 0 28px}
+@media (min-width:821px){.ab-hero{width:100%}}
