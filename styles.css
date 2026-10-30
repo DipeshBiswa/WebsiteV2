@@ -235,3 +235,13 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 .ab-list li:hover .ab-rv{opacity:1;transform:none}
 @media (max-width:820px){.ab-pw{max-width:420px}.ab-pw .ab-photo{max-width:none}.ab-av{width:92px}}
 @media (prefers-reduced-motion:reduce){.ab-av{animation:none}.ab-rv{transition:opacity .15s}}
+/* Robot avatar + load animation */
+@media (min-width:821px){.ab-pw{margin-top:46px}}
+@media (max-width:820px){.ab-pw{margin-top:58px}}
+.ab-av{right:auto!important;top:auto!important;left:50%;bottom:calc(100% - 16px);width:104px!important;margin-left:-52px;animation:avPop .8s cubic-bezier(.2,1.5,.4,1) 1.0s both!important}
+.ab-rv{width:76px!important;top:-48px!important}
+@keyframes abIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.ab-pw .ab-photo,.ab-copy .eyebrow,.ab-copy h1,.ab-copy .lead,.ab-list li,.ab-cta{animation:abIn .7s cubic-bezier(.2,.7,.2,1) both}
+.ab-pw .ab-photo{animation-delay:.05s}.ab-copy .eyebrow{animation-delay:.15s}.ab-copy h1{animation-delay:.22s}.ab-copy .lead{animation-delay:.3s}
+.ab-list li:nth-child(1){animation-delay:.38s}.ab-list li:nth-child(2){animation-delay:.46s}.ab-list li:nth-child(3){animation-delay:.54s}.ab-list li:nth-child(4){animation-delay:.62s}.ab-cta{animation-delay:.72s}
+@media (prefers-reduced-motion:reduce){.ab-pw .ab-photo,.ab-copy .eyebrow,.ab-copy h1,.ab-copy .lead,.ab-list li,.ab-cta{animation:none}}
