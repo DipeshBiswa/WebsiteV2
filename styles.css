@@ -245,3 +245,18 @@ nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space
 .ab-pw .ab-photo{animation-delay:.05s}.ab-copy .eyebrow{animation-delay:.15s}.ab-copy h1{animation-delay:.22s}.ab-copy .lead{animation-delay:.3s}
 .ab-list li:nth-child(1){animation-delay:.38s}.ab-list li:nth-child(2){animation-delay:.46s}.ab-list li:nth-child(3){animation-delay:.54s}.ab-list li:nth-child(4){animation-delay:.62s}.ab-cta{animation-delay:.72s}
 @media (prefers-reduced-motion:reduce){.ab-pw .ab-photo,.ab-copy .eyebrow,.ab-copy h1,.ab-copy .lead,.ab-list li,.ab-cta{animation:none}}
+/* Row hover animations (robot removed) */
+.ab-pw{margin-top:0!important}
+.ab-pw .ab-photo,.ab-copy .eyebrow,.ab-copy h1,.ab-copy .lead,.ab-list li,.ab-cta{animation-fill-mode:backwards!important}
+.ab-list li{cursor:default;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .3s,background .3s}
+.ab-list li::after{content:"→";margin-left:auto;padding-left:12px;font-size:20px;color:var(--ink3);opacity:0;transform:translateX(-10px);transition:opacity .3s,transform .4s cubic-bezier(.2,.8,.2,1)}
+.ab-list li:hover{transform:translateX(10px);box-shadow:0 14px 34px rgba(124,58,237,.18);border-color:rgba(124,58,237,.45)}
+.ab-list li:hover::after{opacity:1;transform:none}
+.ab-ph{transition:transform .45s cubic-bezier(.2,1.4,.4,1),box-shadow .4s}
+.ab-ph img{transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.ab-list li:hover .ab-ph{transform:scale(1.04) rotate(-3deg);box-shadow:0 12px 26px rgba(124,58,237,.3)}
+.ab-list li:hover .ab-ph img{transform:scale(1.12)}
+.ab-list strong{transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.ab-list li:hover strong{transform:translateX(3px)}
+@media (hover:none){.ab-list li:hover{transform:none}}
+@media (prefers-reduced-motion:reduce){.ab-list li,.ab-ph,.ab-ph img{transition:none}.ab-list li:hover,.ab-list li:hover .ab-ph,.ab-list li:hover .ab-ph img{transform:none}}
