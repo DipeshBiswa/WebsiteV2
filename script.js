@@ -17,7 +17,7 @@ function openProject(id) {
     m.contribs.map((b) => '<li>' + esc(b) + '</li>').join('') + '</ul></div><div>' +
     (m.arch ? '<h4>How it fits together</h4><p>' + esc(m.arch) + '</p>' : '') +
     '<h4>Technologies</h4><div class="chips">' + m.chips.map((c) => '<span class="chip">' + esc(c) + '</span>').join('') + '</div>' +
-    (m.url ? '<a class="btn ink" href="' + esc(m.url) + '" target="_blank" rel="noopener">Open live demo ↗</a>' : '') + '</div></div>';
+    '<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">' + (m.url ? '<a class="btn ink" href="' + esc(m.url) + '" target="_blank" rel="noopener">Open live demo ↗</a>' : '') + (m.repo ? '<a class="btn glass" href="' + esc(m.repo) + '" target="_blank" rel="noopener">View on GitHub ↗</a>' : '') + '</div>' + '</div></div>';
   panel.scrollTop = 0; openModal(pm);
 }
 const root = document.documentElement;
