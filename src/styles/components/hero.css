@@ -21,8 +21,8 @@ html[data-theme="dark"] .hero::before,.app[data-theme="dark"] .hero::before{filt
 @media (prefers-reduced-motion:no-preference){
 .bld{animation-delay:3.8s}
 .pw{animation:wordRecoil 2.6s ease-in-out 1.4s both}
-.di .g0{display:inline;animation:iGone .01s linear 3.8s both}
-.di .g1{position:absolute;left:0;top:0;opacity:0;animation:iBack .35s ease-out 3.8s both}
+.di .g0{display:inline}
+.di .g1{position:absolute;left:0;top:0;opacity:0;clip-path:inset(0 0 var(--dotcut,60%) 0);animation:iBack .35s ease-out 3.8s both}
 .fh{display:block;position:absolute;left:calc(50% + .0275em);top:calc(.68em - 1ex);width:.27em;height:.27em;margin:-.135em 0 0 -.135em;z-index:5;pointer-events:none;animation:heartX 2.6s linear 1.4s both,heartY 2.6s linear 1.4s both}
 .fh svg{display:block;width:100%;height:100%;animation:heartPop .35s ease-out 3.8s both}
 }
