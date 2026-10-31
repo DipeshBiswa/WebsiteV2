@@ -1,0 +1,11 @@
+.navlinks a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:980px;font-size:15px;transition:background .3s}
+.navlinks a:hover{background:var(--hover)}
+@media (max-width:700px){
+nav.glass{flex-wrap:nowrap!important;max-width:100%;padding:3px 4px 3px 14px!important;gap:2px!important}
+nav.glass>strong{font-size:14px!important;margin-right:4px!important;white-space:nowrap}
+.navlinks{min-width:0;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{min-height:40px;padding:0 9px;font-size:13px}
+}
+@media (max-width:520px){nav.glass>strong{display:none}nav.glass{padding-left:6px!important}}
+/* Mobile: compact one-row nav, toast below it and under modals */

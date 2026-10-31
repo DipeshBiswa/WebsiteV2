@@ -1,0 +1,4 @@
+.bar{position:fixed;top:0;left:0;width:100%;height:3px;z-index:20;background:linear-gradient(90deg,#2f6bff,#8a4dff,#ff6a3d);transform-origin:left;transform:scaleX(0)}
+@supports (animation-timeline:view()){
+.bar{animation:prog linear both;animation-timeline:scroll(root)}
+}

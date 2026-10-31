@@ -1,0 +1,13 @@
+.app{background:var(--bg);color:var(--ink);transition:background-color .4s,color .4s}
+body{margin:0}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Inter,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);transition:background-color .4s,color .4s;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+html{scroll-behavior:smooth}
+.serif{font-family:Fraunces,Georgia,"Times New Roman",serif;font-weight:600;font-style:italic;letter-spacing:-0.02em;color:var(--accent)}
+.aurora{background:linear-gradient(100deg,var(--a1),var(--a2) 55%,var(--a3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.wrap{max-width:1280px;margin:0 auto;padding:0 max(20px,4vw)}
+.eyebrow{margin:0 0 16px;font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.h2{margin:0 0 48px;font-size:clamp(40px,6vw,84px);line-height:1;letter-spacing:-0.04em;font-weight:700}
+button{font:inherit;color:inherit;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}
+.page{width:100%;max-width:1440px;margin:0 auto;box-sizing:border-box}

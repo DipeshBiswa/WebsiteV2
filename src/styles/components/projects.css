@@ -1,0 +1,17 @@
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.card{border-radius:36px;padding:40px;display:flex;flex-direction:column;gap:10px;min-height:440px;box-sizing:border-box;transition:transform .6s cubic-bezier(.16,1,.3,1),opacity .4s,box-shadow .6s}
+.card:hover{transform:translateY(-8px);box-shadow:0 40px 70px rgba(14,17,22,.16)}
+.bento:has(.card:hover) .card:not(:hover){opacity:.55;transform:scale(.975)}
+.shot{margin-top:auto;height:170px;border-radius:22px;background:var(--glass);box-shadow:0 20px 40px rgba(14,17,22,.1);transition:height .7s cubic-bezier(.16,1,.3,1)}
+.card:hover .shot{height:230px}
+button.card{border:0;text-align:left;width:100%;appearance:none}
+.card .h{display:block;font-size:clamp(30px,3.4vw,46px);line-height:1.05;letter-spacing:-0.035em;font-weight:700}
+.card .d{display:block;font-size:18px;line-height:1.45;color:var(--ink2);max-width:520px}
+.card .more{margin-top:6px;font-weight:600;font-size:16px;display:inline-flex;align-items:center;gap:6px;transition:gap .4s}.card:hover .more{gap:14px}
+.card .tag{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink2)}
+.card .meta{display:block;font-size:15px;font-weight:600;color:var(--ink2)}
+.shot{display:flex;flex-wrap:wrap;align-content:flex-start;gap:8px;padding:22px;box-sizing:border-box;overflow:hidden}
+.shot.img{padding:0;background:none;box-shadow:none;border-radius:0;overflow:visible}.shot.img img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;border-radius:14px;filter:drop-shadow(0 24px 32px rgba(14,17,22,.18))}
+.chip{display:inline-flex;align-items:center;min-height:32px;padding:0 14px;border-radius:980px;background:var(--surface);font-size:14px;font-weight:500;color:var(--ink);box-shadow:0 2px 8px rgba(14,17,22,.08)}
+.c1{grid-column:span 4;background:linear-gradient(145deg,var(--c1a),var(--c1b))}.c2{grid-column:span 2;background:linear-gradient(145deg,var(--c2a),var(--c2b))}
+.c3{grid-column:span 2;background:linear-gradient(145deg,var(--c3a),var(--c3b))}.c4{grid-column:span 4;background:linear-gradient(145deg,var(--c4a),var(--c4b))}

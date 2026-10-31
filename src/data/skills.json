@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Java",
+    "logo": "logos/java.png"
+  },
+  {
+    "name": "Python",
+    "logo": "logos/python.png"
+  },
+  {
+    "name": "JavaScript",
+    "logo": "logos/javascript.png"
+  },
+  {
+    "name": "HTML",
+    "logo": "logos/html.png"
+  },
+  {
+    "name": "CSS",
+    "logo": "logos/css.png"
+  },
+  {
+    "name": "SQL",
+    "svg": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><rect width=\"64\" height=\"64\" rx=\"16\" fill=\"#4b5563\"/><g fill=\"none\" stroke=\"#fff\" stroke-width=\"3.5\"><ellipse cx=\"32\" cy=\"17\" rx=\"16\" ry=\"6\"/><path d=\"M16 17v30c0 3.3 7.2 6 16 6s16-2.7 16-6V17\"/><path d=\"M16 32c0 3.3 7.2 6 16 6s16-2.7 16-6\"/></g></svg>"
+  },
+  {
+    "name": "Spring Boot",
+    "logo": "logos/springboot.png"
+  },
+  {
+    "name": "React",
+    "logo": "logos/react.png"
+  },
+  {
+    "name": "JUnit",
+    "logo": "logos/junit.png"
+  },
+  {
+    "name": "Jest",
+    "logo": "logos/jest.png"
+  },
+  {
+    "name": "PostgreSQL",
+    "logo": "logos/postgres.png"
+  },
+  {
+    "name": "MySQL",
+    "logo": "logos/mysql.png"
+  },
+  {
+    "name": "MongoDB",
+    "logo": "logos/mongodb.png"
+  },
+  {
+    "name": "Git",
+    "logo": "logos/git.png"
+  },
+  {
+    "name": "REST APIs",
+    "svg": "<svg viewBox=\"0 0 64 64\" aria-hidden=\"true\"><rect width=\"64\" height=\"64\" rx=\"16\" fill=\"#6d5bd0\"/><path d=\"M14 24h32m-9-9l9 9-9 9M50 41H18m9-9l-9 9 9 9\" fill=\"none\" stroke=\"#fff\" stroke-width=\"4.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>"
+  },
+  {
+    "name": "GitLab CI/CD",
+    "logo": "logos/gitlab.png"
+  },
+  {
+    "name": "Maven",
+    "logo": "logos/maven.png"
+  },
+  {
+    "name": "Railway",
+    "logo": "logos/railway.png"
+  },
+  {
+    "name": "Vercel",
+    "logo": "logos/vercel.png"
+  }
+]

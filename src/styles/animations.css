@@ -1,0 +1,13 @@
+@keyframes rise{from{opacity:0;transform:translateY(46px);filter:blur(14px)}to{opacity:1;transform:none;filter:blur(0)}}
+@keyframes drift{from{transform:translate3d(-8%,-5%,0) scale(1)}to{transform:translate3d(8%,6%,0) scale(1.2)}}
+@keyframes float{from{transform:translateY(0) rotate(-1.5deg)}to{transform:translateY(-16px) rotate(1deg)}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,170,90,.5)}100%{box-shadow:0 0 0 12px rgba(34,170,90,0)}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(40px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes reveal{from{opacity:0;transform:translateY(70px) scale(.96)}to{opacity:1;transform:none}}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.rv{animation:none}
+@supports (animation-timeline:view()){
+.rv{animation:reveal linear backwards;animation-timeline:view();animation-range:entry 0% cover 30%}
+}
+@media (hover:none){.row p{max-height:none;opacity:1}}
