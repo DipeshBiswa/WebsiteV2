@@ -29,14 +29,14 @@ async function render(html, vars = {}, helpers = {}) {
   return out.replace(/\{\{(\w+)\}\}/g, (_, k) => (k in vars ? vars[k] : k in helpers ? helpers[k]() : `{{${k}}}`));
 }
 
-// ---- data-driven component: skills marquee (two copies for the seamless loop) ----
+// ---- data-driven component: skills, grouped in the order they appear in skills.json ----
 async function skillTiles() {
   const skills = JSON.parse(await readFile(join(src, 'data', 'skills.json'), 'utf8'));
-  const tile = (s) => `<div class="sk">${s.logo
+  const tile = (s) => `<li class="sk">${s.logo
     ? `<img src="assets/${s.logo}" alt="" width="64" height="64">`
-    : s.svg}<span>${s.name}</span></div>`;
-  const row = skills.map(tile).join('');
-  return `<div>${row}</div>\n<div aria-hidden="true">${row}</div>`;
+    : s.svg}<span>${s.name}</span></li>`;
+  const groups = [...new Set(skills.map((s) => s.group))];
+  return groups.map((g) => `<div class="skg"><h3>${g}</h3><ul class="skrow">${skills.filter((s) => s.group === g).map(tile).join('')}</ul></div>`).join('\n');
 }
 
 // ---- build ----
@@ -45,9 +45,12 @@ await mkdir(dist, { recursive: true });
 await cp(join(root, 'public'), dist, { recursive: true });
 
 const tiles = await skillTiles();
+// Absolute site URL for link previews: SITE_URL, else Vercel's production domain; empty locally.
+const prod = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+const siteUrl = (process.env.SITE_URL || (prod ? `https://${prod}` : '')).replace(/\/$/, '');
 for (const file of await readdir(join(src, 'pages'))) {
   const page = await readFile(join(src, 'pages', file), 'utf8');
-  await writeFile(join(dist, file), await render(page, {}, { skillTiles: () => tiles }));
+  await writeFile(join(dist, file), await render(page, {}, { skillTiles: () => tiles, siteUrl: () => siteUrl }));
 }
 
 await build({

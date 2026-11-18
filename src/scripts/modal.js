@@ -4,14 +4,17 @@ import { PROJECTS } from './data/projects.js';
 const X = '<button class="x" data-close aria-label="Close"><svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M3 3l12 12M15 3L3 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>';
 const esc = (t) => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;');
 const pm = document.getElementById('pm'), panel = document.getElementById('pm-panel'), rm = document.getElementById('rm');
+const page = document.querySelector('.page');
 let lastFocus = null;
-function openModal(el) { lastFocus = document.activeElement; el.hidden = false; document.body.style.overflow = 'hidden'; const c = el.querySelector('.x'); if (c) c.focus(); }
-function closeModals() { pm.hidden = true; rm.hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+const isOpen = () => !pm.hidden || !rm.hidden;
+// While a dialog is open the page behind it is inert, so Tab and screen readers stay inside the dialog.
+function openModal(el) { lastFocus = document.activeElement; el.hidden = false; page.inert = true; document.body.style.overflow = 'hidden'; const c = el.querySelector('.x'); if (c) c.focus(); }
+function closeModals() { if (!isOpen()) return; pm.hidden = true; rm.hidden = true; page.inert = false; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
 function openProject(id) {
   const m = PROJECTS.find((p) => p.id === id); if (!m) return;
   panel.innerHTML = X +
     '<div class="mhead" style="background:var(--panel2)"><p class="eyebrow" style="margin:0 0 12px">' + esc(m.tag) + '</p>' +
-    '<h2 style="margin:0 0 10px;font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-0.04em;font-weight:700">' + esc(m.name) + '</h2>' +
+    '<h2 id="pm-title" style="margin:0 0 10px;font-size:clamp(34px,5vw,64px);line-height:1;letter-spacing:-0.04em;font-weight:700">' + esc(m.name) + '</h2>' +
     '<p style="margin:0;font-size:16px;font-weight:600;color:var(--ink2)">' + esc(m.dates) + '</p></div>' +
     (m.img ? '<div class="mimg"><img src="' + esc(m.img) + '" alt="' + esc(m.alt) + '"></div>' : '') +
     '<div class="mgrid"><div><h4>Overview</h4><p>' + esc(m.experience) + '</p><h4>The problem</h4><p>' + esc(m.problem) + '</p><h4>What I did</h4><ul>' +

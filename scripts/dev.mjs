@@ -17,6 +17,8 @@ for (const dir of ['src', 'public']) watch(join(root, dir), { recursive: true },
 createServer(async (req, res) => {
   let p = normalize(decodeURIComponent(req.url.split('?')[0])).replace(/^(\.\.[/\\])+/, '');
   if (p.endsWith('/')) p += 'index.html';
-  try { res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' }); res.end(await readFile(join(root, 'dist', p))); }
-  catch { res.writeHead(404); res.end('Not found'); }
+  let body;
+  try { body = await readFile(join(root, 'dist', p)); }
+  catch { res.writeHead(404); res.end('Not found'); return; }
+  res.writeHead(200, { 'content-type': types[extname(p)] || 'application/octet-stream' }); res.end(body);
 }).listen(3000, () => console.log('http://localhost:3000'));

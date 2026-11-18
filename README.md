@@ -9,7 +9,7 @@ Static portfolio site built from small HTML components, CSS modules and vanilla 
       pages/                  index.html, about.html: pages composed from components
       components/             one HTML partial per section (nav, hero, projects, experience,
                               skills, resume, contact, modals, about-hero, ...)
-      data/skills.json        skills marquee content
+      data/skills.json        skills content, grouped by the "group" field
       styles/
         main.css              entry; imports the files below in cascade order
         tokens.css            colors + theme variables

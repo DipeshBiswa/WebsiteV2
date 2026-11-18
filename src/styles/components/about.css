@@ -95,3 +95,4 @@
 .ab-list li:hover strong{transform:translateX(3px)}
 @media (hover:none){.ab-list li:hover{transform:none}}
 @media (prefers-reduced-motion:reduce){.ab-list li,.ab-ph,.ab-ph img{transition:none}.ab-list li:hover,.ab-list li:hover .ab-ph,.ab-list li:hover .ab-ph img{transform:none}}
+.ab-copy .lead{text-wrap:balance}
