@@ -11,8 +11,3 @@ html{scroll-behavior:smooth}
 button{font:inherit;color:inherit;cursor:pointer}
 @media (prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}
 .page{width:100%;max-width:1440px;margin:0 auto;box-sizing:border-box}
-:focus-visible{outline:2.5px solid var(--hov);outline-offset:4px}
-h2,h3,.card .h{text-wrap:balance}
-::selection{background:var(--sel);color:var(--ink)}
-html{scrollbar-color:var(--line3) transparent}
-p{text-wrap:pretty}
